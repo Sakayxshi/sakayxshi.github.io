@@ -80,21 +80,22 @@ h1 {
 .typewriter {
   overflow: hidden;
   white-space: nowrap;
-  border-right: 2px solid var(--muted);
   max-width: 38ch;
   width: 0;
+  margin-bottom: 0;
+  line-height: 1.4;
 }
 
 .typewriter:nth-child(3) {
-  animation: typing 2s steps(40) 0s forwards, blink 0.7s step-end 0s 4;
+  animation: typing 2s steps(40) 0s forwards, blink 0.7s step-end 0s 3, removecursor 0s 2s forwards;
 }
 
 .typewriter:nth-child(4) {
-  animation: typing 2s steps(40) 2.1s forwards, blink 0.7s step-end 2.1s 4;
+  animation: typing 2s steps(40) 2.1s forwards, blink 0.7s step-end 2.1s 3, removecursor 0s 4.1s forwards;
 }
 
 .typewriter:nth-child(5) {
-  animation: typing 2s steps(40) 4.2s forwards, blink 0.7s step-end 4.2s 4;
+  animation: typing 2s steps(40) 4.2s forwards, blink 0.7s step-end 4.2s 3, removecursor 0s 6.2s forwards;
 }
 
 @keyframes typing {
@@ -104,6 +105,10 @@ h1 {
 
 @keyframes blink {
   50% { border-color: transparent; }
+}
+
+@keyframes removecursor {
+  to { border-right: none; }
 }
 
 
