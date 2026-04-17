@@ -275,13 +275,23 @@ section {
   gap: 4rem;
   padding-top: 8rem;
 }
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-text p + p {
+  margin-top: 1rem;
+}
+
 .about-skills {
-  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  border-top: 1px solid var(--border);
-  padding-top: 2rem;
+  border-left: 1px solid var(--border);
+  padding-left: 2rem;
 }
 
 .skill-label {
