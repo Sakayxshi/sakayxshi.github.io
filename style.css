@@ -286,13 +286,6 @@ section {
   margin-top: 1rem;
 }
 
-.about-skills {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  border-left: 1px solid var(--border);
-  padding-left: 2rem;
-}
 
 .skill-label {
   font-family: 'DM Mono', monospace;
